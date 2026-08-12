@@ -5,70 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        .menu-btn {
-            position: fixed;
-            top: 20px;
-            right: 25px;
-
-            font-size: 30px;
-            color: white;
-            background: transparent;
-            border: none;
-
-            cursor: pointer;
-            z-index: 1001;
-        }
-
-        .side-nav {
-            height: 100%;
-            width: 0;
-
-            position: fixed;
-            top: 0;
-            right: 0;
-
-            background: rgba(0, 0, 0, 0.9);
-
-            overflow-x: hidden;
-
-            transition: 0.4s;
-
-            padding-top: 80px;
-
-            z-index: 1000;
-        }
-
-        .side-nav a {
-            display: block;
-
-            padding: 20px 30px;
-
-            color: white;
-            text-decoration: none;
-
-            font-size: 22px;
-
-            transition: 0.3s;
-        }
-
-        .side-nav a:hover {
-            color: red;
-            padding-left: 40px;
-        }
-
-        .close-btn {
-            position: absolute;
-            top: 15px;
-            right: 25px;
-
-            color: white;
-            font-size: 40px;
-
-            cursor: pointer;
-        }
+        
         body{
             background-color: rgb(28, 27, 27);
             margin:0;
@@ -175,17 +112,6 @@
     </style>
 </head>
 <body>
-    <button class="menu-btn" onclick="openMenu()">☰</button>
-
-    <div id="sideNav" class="side-nav">
-        <span class="close-btn" onclick="closeMenu()">×</span>
-
-        <a href="#box1" onclick="closeMenu()">Home</a>
-        <a href="#box2" onclick="closeMenu()">About</a>
-        <a href="#box3" onclick="closeMenu()">Villains</a>
-        <a href="#box4" onclick="closeMenu()">Gallery</a>
-        <a href="#box5" onclick="closeMenu()">Contact</a>
-    </div>
     <div >
         <div id="video">
             <video autoplay muted loop playsinline class="background-video">
