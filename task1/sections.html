@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: rgb(128, 94, 94);
+        }
+        section h2{
+            color:yellow;
+            text-transform: capitalize;
+        }
+        section>h2{
+            text-transform: lowercase;
+            text-shadow: 1px 1px 0 black;
+        }
+        h2~p{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>
+            hello
+        </h2>
+        <p>world</p>
+        <p>bye</p>
+        <h2>
+            lmao
+        </h2>
+    </section>
+</body>
+</html>
