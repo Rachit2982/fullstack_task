@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mainbox{
+            flex-direction:row ;        
+            border-radius: 10px;
+            border: 2px solid rgb(146, 129, 129);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+        .box{
+            flex-shrink: 1;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 100px;
+            
+            background-color: #8c7b7b;
+            margin: 10px;
+            width:150px;
+            height:150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainbox">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>
