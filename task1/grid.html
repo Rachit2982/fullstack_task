@@ -12,18 +12,7 @@
             "large small3 small4";
             background:transparent;
         }
-        @media (max-width: 768px) {
-            .bento {
-                width: 90%;
-                height: auto;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: auto auto auto;
-                grid-template-areas:
-                    "large large"
-                    "small1 small2"
-                    "small3 small4";
-            }
-        }
+        
         .box{ background:#fff; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.08); display:flex; align-items:center; justify-content:center; font-weight:700; color:#111; font-size:18px }
         .box.large{ grid-area: large; }
         .box.s1{ grid-area: small1; }
