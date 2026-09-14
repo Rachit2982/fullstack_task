@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Dashboard</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: #1f2937;
+            background: #eef2f7;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: minmax(180px, 1fr) 4fr;
+            grid-template-rows: auto 1fr;
+            gap: 20px;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .header {
+            grid-column: 1 / -1;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 20px 24px;
+            color: white;
+            background: #1d4ed8;
+            border-radius: 14px;
+        }
+
+        .header h1,
+        .header p {
+            margin: 0;
+        }
+
+        .header p {
+            color: #dbeafe;
+        }
+
+        .sidebar,
+        .card,
+        .panel {
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgb(15 23 42 / 8%);
+        }
+
+        .sidebar {
+            display: grid;
+            align-content: start;
+            gap: 8px;
+            padding: 18px;
+        }
+
+        .sidebar h2 {
+            margin: 0 0 10px;
+            font-size: 1.1rem;
+        }
+
+        .nav-item {
+            padding: 12px;
+            color: #475569;
+            border-radius: 8px;
+        }
+
+        .nav-item.active {
+            color: #1d4ed8;
+            font-weight: bold;
+            background: #dbeafe;
+        }
+
+        .content {
+            display: grid;
+            gap: 20px;
+            align-content: start;
+            min-width: 0;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            padding: 20px;
+        }
+
+        .card p {
+            margin: 0 0 8px;
+            color: #64748b;
+        }
+
+        .card strong {
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+        }
+
+        .panels {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+            gap: 20px;
+        }
+
+        .panel {
+            min-width: 0;
+            padding: 20px;
+        }
+
+        .panel h2 {
+            margin: 0 0 16px;
+            font-size: 1.1rem;
+        }
+
+        .bar {
+            display: grid;
+            grid-template-columns: minmax(70px, 1fr) 3fr auto;
+            align-items: center;
+            gap: 10px;
+            margin: 14px 0;
+            color: #475569;
+        }
+
+        .track {
+            height: 10px;
+            overflow: hidden;
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+
+        .fill {
+            height: 100%;
+            background: #3b82f6;
+            border-radius: inherit;
+        }
+
+        .activity {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 12px;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .activity:last-child {
+            border-bottom: 0;
+        }
+
+        .avatar {
+            display: grid;
+            place-items: center;
+            width: 36px;
+            height: 36px;
+            color: white;
+            background: #8b5cf6;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 1px) {
+            /* Intentionally empty: responsiveness is provided by auto-fit grid rules. */
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <div><h1>Dashboard</h1><p>Welcome back, Rachel</p></div>
+            <strong>June 2025</strong>
+        </header>
+        <aside class="sidebar">
+            <h2>Workspace</h2>
+            <div class="nav-item active">Overview</div>
+            <div class="nav-item">Analytics</div>
+            <div class="nav-item">Projects</div>
+            <div class="nav-item">Team</div>
+            <div class="nav-item">Settings</div>
+        </aside>
+        <main class="content">
+            <section class="stats">
+                <article class="card"><p>Total Revenue</p><strong>$24,780</strong></article>
+                <article class="card"><p>New Customers</p><strong>1,248</strong></article>
+                <article class="card"><p>Orders</p><strong>3,642</strong></article>
+                <article class="card"><p>Conversion</p><strong>8.6%</strong></article>
+            </section>
+            <section class="panels">
+                <article class="panel">
+                    <h2>Performance</h2>
+                    <div class="bar"><span>Design</span><div class="track"><div class="fill" style="width:85%"></div></div><b>85%</b></div>
+                    <div class="bar"><span>Marketing</span><div class="track"><div class="fill" style="width:68%"></div></div><b>68%</b></div>
+                    <div class="bar"><span>Development</span><div class="track"><div class="fill" style="width:92%"></div></div><b>92%</b></div>
+                </article>
+                <article class="panel">
+                    <h2>Recent Activity</h2>
+                    <div class="activity"><span class="avatar">A</span><span>Alex updated a project</span><small>2m</small></div>
+                    <div class="activity"><span class="avatar">M</span><span>Maria joined the team</span><small>1h</small></div>
+                    <div class="activity"><span class="avatar">J</span><span>James completed a task</span><small>3h</small></div>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
