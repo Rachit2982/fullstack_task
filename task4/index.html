@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminPro Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>◉ AdminPro</h2>
+
+        <nav>
+            <a class="active">▣ Dashboard</a>
+            <a>⌁ Analytics</a>
+            <a>♙ Users</a>
+            <a>🛒 Orders</a>
+            <a>▣ Products</a>
+            <a>⚙ Settings</a>
+        </nav>
+
+        <div class="profile">
+            <div class="avatar">A</div>
+            <div>
+                <b>Rachit Saxena</b>
+                <small>Admin</small>
+            </div>
+        </div>
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Header -->
+        <header>
+            <input type="text" placeholder="🔍 Search...">
+            <div>🔔 &nbsp; 👤</div>
+        </header>
+
+        <h1>Dashboard</h1>
+
+
+        <!-- KPI Cards -->
+        <section class="cards">
+
+            <div class="card">
+                <span class="icon green">◉</span>
+                <p>Total Revenue</p>
+                <h2>₹1,24,532</h2>
+                <small class="green-text">↑ 12% from last month</small>
+            </div>
+
+            <div class="card">
+                <span class="icon blue">🛒</span>
+                <p>Total Orders</p>
+                <h2>892</h2>
+                <small class="green-text">↑ 8% from last month</small>
+            </div>
+
+            <div class="card">
+                <span class="icon purple">●</span>
+                <p>Active Users</p>
+                <h2>3,521</h2>
+                <small class="green-text">↑ 15% from last month</small>
+            </div>
+
+            <div class="card">
+                <span class="icon orange">▢</span>
+                <p>Conversion Rate</p>
+                <h2>4.2%</h2>
+                <small class="green-text">↑ 2% from last month</small>
+            </div>
+
+        </section>
+
+
+        <!-- Revenue + Orders -->
+        <section class="grid-two">
+
+            <div class="panel">
+                <div class="panel-title">
+                    <b>Revenue Overview</b>
+                    <b>₹1,24,532</b>
+                </div>
+
+                <div class="chart">
+                    <div class="line"></div>
+                </div>
+
+                <div class="months">
+                    <span>Jan</span>
+                    <span>Feb</span>
+                    <span>Mar</span>
+                    <span>Apr</span>
+                    <span>May</span>
+                    <span>Jun</span>
+                    <span>Jul</span>
+                    <span>Aug</span>
+                </div>
+            </div>
+
+
+            <div class="panel">
+                <div class="panel-title">
+                    <b>Recent Orders</b>
+                    <a>View all →</a>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+
+                    <tr>
+                        <td>Rahul Sharma</td>
+                        <td>₹2,409</td>
+                        <td><span class="status delivered">Delivered</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Priya Singh</td>
+                        <td>₹4,009</td>
+                        <td><span class="status pending">Pending</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Amit Kumar</td>
+                        <td>₹1,209</td>
+                        <td><span class="status shipped">Shipped</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Neha Gupta</td>
+                        <td>₹3,799</td>
+                        <td><span class="status delivered">Delivered</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Sahil Verma</td>
+                        <td>₹5,499</td>
+                        <td><span class="status cancelled">Cancelled</span></td>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+
+
+        <!-- Traffic + Products -->
+        <section class="grid-two">
+
+            <div class="panel">
+                <div class="panel-title">
+                    <div>
+                        <b>Traffic Overview</b>
+                        <h2>8,432</h2>
+                        <small>Total Visitors</small>
+                    </div>
+
+                    <span class="green-text">↑ 10%</span>
+                </div>
+
+                <div class="bars">
+                    <div style="height:35%"></div>
+                    <div style="height:50%"></div>
+                    <div style="height:40%"></div>
+                    <div style="height:55%"></div>
+                    <div style="height:75%"></div>
+                    <div style="height:65%"></div>
+                    <div style="height:90%"></div>
+                </div>
+
+                <div class="days">
+                    <span>Mon</span>
+                    <span>Tue</span>
+                    <span>Wed</span>
+                    <span>Thu</span>
+                    <span>Fri</span>
+                    <span>Sat</span>
+                    <span>Sun</span>
+                </div>
+            </div>
+
+
+            <div class="panel">
+                <div class="panel-title">
+                    <b>Top Products</b>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Sales</th>
+                        <th>Change</th>
+                    </tr>
+
+                    <tr>
+                        <td>Laptop Pro</td>
+                        <td>2,450</td>
+                        <td class="green-text">+12%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wireless Earbuds</td>
+                        <td>1,902</td>
+                        <td class="green-text">+8%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Smart Watch</td>
+                        <td>1,203</td>
+                        <td class="green-text">+6%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Backpack</td>
+                        <td>902</td>
+                        <td class="green-text">+4%</td>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>
