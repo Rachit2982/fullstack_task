@@ -4,3 +4,4 @@ var myobj={
     city: "New York"
 };
 console.log(myobj.name);
+console.log(myobj);
