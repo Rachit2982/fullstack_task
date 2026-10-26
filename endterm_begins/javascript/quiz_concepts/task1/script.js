@@ -26,3 +26,4 @@ if(count>=questionsList.length){
     document.getElementById("question").innerHTML="Quiz Completed!";
 }
 }
+  
